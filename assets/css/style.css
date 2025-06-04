@@ -124,6 +124,24 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to bottom, rgba(130,106,63,1) 0%,rgba(230,207,120,1) 50%,rgba(130,106,63,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#826a3f', endColorstr='#826a3f',GradientType=0 );
 }
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filters select {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -1424,7 +1442,7 @@ section {
 }
 
 .chefs .member .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 212, 255, 0) 100%);
   opacity: 1;
   transition: 0.4s;
 }

@@ -39,7 +39,23 @@
   
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-  
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Candy Girls Online",
+          "url": "https://candygirlsonline.com/independent-escorts-in-chennai",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chennai",
+            "addressRegion": "TN",
+            "addressCountry": "IN"
+          },
+          "description": "Top-rated independent escorts in Chennai offering discreet and premium companionship services."
+        }
+  </script>
+
     <!-- =======================================================
     * Template Name: Restaurantly - v3.3.0
     * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
@@ -111,12 +127,95 @@
         </div>
       </section>
 
+
+      <section class="inner-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              
+            <div class="section-title">
+              <h2>Book Now</h2>
+              <p>Browse and book independent escorts in Chennai. Filter by location and availability. Verified, discreet profiles.</p>
+            </div>
+              <!-- Filters -->
+              <div class="filters">
+                <select id="locationFilter">
+                  <option value="">All Locations</option>
+                  <option value="T Nagar">T Nagar</option>
+                  <option value="OMR">OMR</option>
+                  <option value="Anna Nagar">Anna Nagar</option>
+                </select>
+                <select id="availabilityFilter">
+                  <option value="">All Availability</option>
+                  <option value="24/7">24/7</option>
+                  <option value="Evenings">Evenings</option>
+                  <option value="Weekends">Weekends</option>
+                </select>
+              </div>
+
+              <!-- Escort Grid -->
+              <div class="chefs grid" id="escortGrid">
+
+                <!-- Profile Card with Schema Markup -->
+                <div class="card member" data-location="T Nagar" data-availability="24/7" itemscope itemtype="http://schema.org/Person">
+                  <img class="img-fluid" src="assets/img/escorts/coimbatore-call-girls.webp" alt="Ananya - Independent escort in Chennai" itemprop="image">
+                  <div class="member-info card-content">
+                    <div class="member-info-content">
+                      <h3 itemprop="name">Ananya</h3>
+                      <p>📍 Location: <span itemprop="address">T Nagar</span></p>
+                      <p>🕒 Availability: <span>24/7</span></p>
+                      <p itemprop="description" class="">Elegant, friendly, and available for luxury companionship in Chennai.</p>
+                      <div class="content-blk d-flex partner-link-blk text-center justify-content-center">
+                        <a href="chennai/ananya-t-nagar.html" class="d-block text-center book-a-table-btn scrollto"><i class="bi bi-whatsapp"></i>&nbsp;View Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card member" data-location="OMR" data-availability="Weekends" itemscope itemtype="http://schema.org/Person">
+                  <img class="img-fluid" src="assets/img/escorts/coimbatore-call-girls.webp" alt="Isha - Independent escort in Chennai" itemprop="image">
+                  <div class="member-info card-content">
+                    <div class="member-info-content">
+                      <h3 itemprop="name">Isha</h3>
+                      <p>📍 Location: <span itemprop="address">OMR</span></p>
+                      <p>🕒 Availability: <span>Weekends</span></p>
+                      <p itemprop="description">Charming and discreet independent escort available weekends in Chennai.</p>
+                      <div class="content-blk d-flex partner-link-blk text-center justify-content-center">
+                        <a href="" class="d-block text-center book-a-table-btn scrollto"><i class="bi bi-whatsapp"></i>&nbsp;View Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vip-ribbon bottom-left gold">VIP</div>
+                </div>
+
+                <div class="card member" data-location="Anna Nagar" data-availability="Evenings" itemscope itemtype="http://schema.org/Person">
+                  <img class="img-fluid" src="assets/img/escorts/coimbatore-call-girls.webp" alt="Kiara - Independent escort in Chennai" itemprop="image">
+                  <div class="member-info card-content">
+                    <div class="member-info-content">
+                    <h3 itemprop="name">Kiara</h3>
+                    <p>📍 Location: <span itemprop="address">Anna Nagar</span></p>
+                    <p>🕒 Availability: <span>Evenings</span></p>
+                    <p itemprop="description">Sophisticated companion offering private experiences in Anna Nagar.</p>
+                      <div class="content-blk d-flex partner-link-blk text-center justify-content-center">
+                        <a href="" class="d-block text-center book-a-table-btn scrollto"><i class="bi bi-whatsapp"></i>&nbsp;View Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vip-ribbon bottom-left gold">VIP</div>
+                </div>
+
+              </div>
+          </div>
+          </div>
+          </div>
+          </section>
+
+
     <section class="inner-page">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="inner-page-content about-section inner-section-style">
-
               <div class="row">
                 <div class="col-sm-12">
                   <div class="d-md-flex mb-4">
@@ -142,7 +241,7 @@
                   </ul>
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -167,7 +266,7 @@
                   <p>From romantic nights to casual meetups, independent escorts in Chennai are here to make sure your experience is smooth, stress-free, and deeply enjoyable.</p>
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -224,6 +323,31 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- JS Filters -->
+  <script>
+    const locationFilter = document.getElementById("locationFilter");
+    const availabilityFilter = document.getElementById("availabilityFilter");
+    const cards = document.querySelectorAll(".card");
+
+    function applyFilters() {
+      const location = locationFilter.value.toLowerCase();
+      const availability = availabilityFilter.value.toLowerCase();
+
+      cards.forEach(card => {
+        const cardLocation = card.dataset.location.toLowerCase();
+        const cardAvailability = card.dataset.availability.toLowerCase();
+
+        const matchLocation = !location || cardLocation === location;
+        const matchAvailability = !availability || cardAvailability === availability;
+
+        card.style.display = (matchLocation && matchAvailability) ? "block" : "none";
+      });
+    }
+
+    locationFilter.addEventListener("change", applyFilters);
+    availabilityFilter.addEventListener("change", applyFilters);
+  </script>
 
 </body>
 
