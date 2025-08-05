@@ -1471,6 +1471,8 @@ section {
 .chefs .member .member-info-content {
   bottom: 23px;
   transition: bottom 0.4s;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -1926,7 +1928,7 @@ aside .section-title h2:after {
 }
 
 .inner-page p {
-  margin: 0px 0px 32px;
+  margin: 0px 0px 23px;
 }
 
 .inner-section-style {
