@@ -734,10 +734,10 @@ section {
   margin: 4px 10px;
 }
 
-.section-title p {
+.section-title h3 {
   margin: 0;
-  margin: 0;
-  font-size: 36px;
+  margin: 0 0 14px;
+  font-size: 23px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   color: #cda45e;
