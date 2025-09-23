@@ -1980,7 +1980,12 @@ aside .section-title h2:after {
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji","Segoe UI Emoji";line-height:1.65}
     a:hover{text-decoration:underline}
     .container{max-width:1150px;margin:0 auto;padding:24px}
-    .hero{position:relative;overflow:hidden;border-radius:28px;padding:48px;background:linear-gradient(135deg, rgba(138,92,246,.15), rgba(54,209,220,.10)), radial-gradient(1200px 600px at 90% -20%, rgba(54,209,220,.20), transparent 60%), radial-gradient(900px 500px at -10% 120%, rgba(138,92,246,.25), transparent 60%), var(--card);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .hero{position:relative;overflow:hidden;border-radius:28px;padding:48px; 
+      background: 
+  linear-gradient(135deg, rgba(205, 38, 89, 0.35), rgba(0, 0, 0, 0.9)), /* #CD2659 glow blending into matte black */
+  radial-gradient(900px 600px at 80% -20%, rgba(205, 38, 89, 0.4), transparent 70%), /* sunshine effect with #CD2659 */
+  radial-gradient(1000px 600px at -20% 120%, rgba(0, 0, 0, 0.95), transparent 80%), /* deep matte black bottom */
+  #000000; /* fallback solid black */ , var(--card);box-shadow:0 10px 30px rgba(0,0,0,.35)}
     .kicker{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(138,92,246,.12);color:#c9b8ff;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
     h1{font-size: clamp(28px,4.2vw,46px);line-height:1.12;margin:14px 0 8px}
     .subtitle{color:var(--muted);}
