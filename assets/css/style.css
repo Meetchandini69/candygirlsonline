@@ -1965,6 +1965,10 @@ aside .section-title h2:after {
     
 }
 
+.sticky.card {
+  top: 14px;
+  bottom: inherit;
+}
 /* blog style  */
 
 :root{
