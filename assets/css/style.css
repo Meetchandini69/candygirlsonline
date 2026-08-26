@@ -2285,5 +2285,8 @@ summary {
     transform: translateY(0);
   }
 }
+.card {
+  color: #141414;
+}
 
 /*# sourceMappingURL=style.css.map */
